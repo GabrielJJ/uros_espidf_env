@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/gabrielj/pmec_hw/uros_espidf_env/build/CMakeFiles/bootloader
+/home/gabrielj/pmec_hw/uros_espidf_env/build/CMakeFiles/bootloader.rule
+/home/gabrielj/pmec_hw/uros_espidf_env/build/CMakeFiles/bootloader-complete.rule
+/home/gabrielj/pmec_hw/uros_espidf_env/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/gabrielj/pmec_hw/uros_espidf_env/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/gabrielj/pmec_hw/uros_espidf_env/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/gabrielj/pmec_hw/uros_espidf_env/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/gabrielj/pmec_hw/uros_espidf_env/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/gabrielj/pmec_hw/uros_espidf_env/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/gabrielj/pmec_hw/uros_espidf_env/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

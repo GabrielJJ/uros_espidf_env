@@ -1,0 +1,58 @@
+-- Existing sdkconfig '/home/gabrielj/pmec_hw/uros_espidf_env/sdkconfig' renamed to '/home/gabrielj/pmec_hw/uros_espidf_env/sdkconfig.old'.
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/gabrielj/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/gabrielj/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/gabrielj/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/gabrielj/pmec_hw/uros_espidf_env/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /home/gabrielj/.espressif/python_env/idf5.2_py3.10_env/bin/python (found version "3.10.12") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "uros_esp32" version: 1e803c8
+-- Adding linker script /home/gabrielj/pmec_hw/uros_espidf_env/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/gabrielj/esptest/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/gabrielj/esptest/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/gabrielj/esptest/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/gabrielj/esptest/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/gabrielj/esptest/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/gabrielj/esptest/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/gabrielj/esptest/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/gabrielj/esptest/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Using Micro XRCE-DDS middleware
+mkdir -p /home/gabrielj/pmec_hw/uros_espidf_env/components/micro_ros_espidf_component/micro_ros_src/libmicroros; cd /home/gabrielj/pmec_hw/uros_espidf_env/components/micro_ros_espidf_component/micro_ros_src/libmicroros; \
+for file in $(find /home/gabrielj/pmec_hw/uros_espidf_env/components/micro_ros_espidf_component/micro_ros_src/install/lib/ -name '*.a'); do \
+	folder=$(echo $file | sed -E "s/(.+)\/(.+).a/\2/"); \
+	mkdir -p $folder; cd $folder; /home/gabrielj/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-ar x $file; \
+	for f in *; do \
+		mv $f ../$folder-$f; \
+	done; \
+	cd ..; rm -rf $folder; \
+done ; \
+/home/gabrielj/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-ar rc -s libmicroros.a *.obj; cp libmicroros.a /home/gabrielj/pmec_hw/uros_espidf_env/components/micro_ros_espidf_component; \
+cd ..; rm -rf libmicroros; \
+cp -R /home/gabrielj/pmec_hw/uros_espidf_env/components/micro_ros_espidf_component/micro_ros_src/install/include /home/gabrielj/pmec_hw/uros_espidf_env/components/micro_ros_espidf_component/include;
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls micro_ros_espidf_component mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/gabrielj/esptest/esp-idf/components/app_trace /home/gabrielj/esptest/esp-idf/components/app_update /home/gabrielj/esptest/esp-idf/components/bootloader /home/gabrielj/esptest/esp-idf/components/bootloader_support /home/gabrielj/esptest/esp-idf/components/bt /home/gabrielj/esptest/esp-idf/components/cmock /home/gabrielj/esptest/esp-idf/components/console /home/gabrielj/esptest/esp-idf/components/cxx /home/gabrielj/esptest/esp-idf/components/driver /home/gabrielj/esptest/esp-idf/components/efuse /home/gabrielj/esptest/esp-idf/components/esp-tls /home/gabrielj/esptest/esp-idf/components/esp_adc /home/gabrielj/esptest/esp-idf/components/esp_app_format /home/gabrielj/esptest/esp-idf/components/esp_bootloader_format /home/gabrielj/esptest/esp-idf/components/esp_coex /home/gabrielj/esptest/esp-idf/components/esp_common /home/gabrielj/esptest/esp-idf/components/esp_eth /home/gabrielj/esptest/esp-idf/components/esp_event /home/gabrielj/esptest/esp-idf/components/esp_gdbstub /home/gabrielj/esptest/esp-idf/components/esp_hid /home/gabrielj/esptest/esp-idf/components/esp_http_client /home/gabrielj/esptest/esp-idf/components/esp_http_server /home/gabrielj/esptest/esp-idf/components/esp_https_ota /home/gabrielj/esptest/esp-idf/components/esp_https_server /home/gabrielj/esptest/esp-idf/components/esp_hw_support /home/gabrielj/esptest/esp-idf/components/esp_lcd /home/gabrielj/esptest/esp-idf/components/esp_local_ctrl /home/gabrielj/esptest/esp-idf/components/esp_mm /home/gabrielj/esptest/esp-idf/components/esp_netif /home/gabrielj/esptest/esp-idf/components/esp_netif_stack /home/gabrielj/esptest/esp-idf/components/esp_partition /home/gabrielj/esptest/esp-idf/components/esp_phy /home/gabrielj/esptest/esp-idf/components/esp_pm /home/gabrielj/esptest/esp-idf/components/esp_psram /home/gabrielj/esptest/esp-idf/components/esp_ringbuf /home/gabrielj/esptest/esp-idf/components/esp_rom /home/gabrielj/esptest/esp-idf/components/esp_system /home/gabrielj/esptest/esp-idf/components/esp_timer /home/gabrielj/esptest/esp-idf/components/esp_wifi /home/gabrielj/esptest/esp-idf/components/espcoredump /home/gabrielj/esptest/esp-idf/components/esptool_py /home/gabrielj/esptest/esp-idf/components/fatfs /home/gabrielj/esptest/esp-idf/components/freertos /home/gabrielj/esptest/esp-idf/components/hal /home/gabrielj/esptest/esp-idf/components/heap /home/gabrielj/esptest/esp-idf/components/http_parser /home/gabrielj/esptest/esp-idf/components/idf_test /home/gabrielj/esptest/esp-idf/components/ieee802154 /home/gabrielj/esptest/esp-idf/components/json /home/gabrielj/esptest/esp-idf/components/log /home/gabrielj/esptest/esp-idf/components/lwip /home/gabrielj/pmec_hw/uros_espidf_env/main /home/gabrielj/esptest/esp-idf/components/mbedtls /home/gabrielj/pmec_hw/uros_espidf_env/components/micro_ros_espidf_component /home/gabrielj/esptest/esp-idf/components/mqtt /home/gabrielj/esptest/esp-idf/components/newlib /home/gabrielj/esptest/esp-idf/components/nvs_flash /home/gabrielj/esptest/esp-idf/components/nvs_sec_provider /home/gabrielj/esptest/esp-idf/components/openthread /home/gabrielj/esptest/esp-idf/components/partition_table /home/gabrielj/esptest/esp-idf/components/perfmon /home/gabrielj/esptest/esp-idf/components/protobuf-c /home/gabrielj/esptest/esp-idf/components/protocomm /home/gabrielj/esptest/esp-idf/components/pthread /home/gabrielj/esptest/esp-idf/components/sdmmc /home/gabrielj/esptest/esp-idf/components/soc /home/gabrielj/esptest/esp-idf/components/spi_flash /home/gabrielj/esptest/esp-idf/components/spiffs /home/gabrielj/esptest/esp-idf/components/tcp_transport /home/gabrielj/esptest/esp-idf/components/ulp /home/gabrielj/esptest/esp-idf/components/unity /home/gabrielj/esptest/esp-idf/components/usb /home/gabrielj/esptest/esp-idf/components/vfs /home/gabrielj/esptest/esp-idf/components/wear_levelling /home/gabrielj/esptest/esp-idf/components/wifi_provisioning /home/gabrielj/esptest/esp-idf/components/wpa_supplicant /home/gabrielj/esptest/esp-idf/components/xtensa
+-- Configuring done (11.2s)
+-- Generating done (0.6s)
+-- Build files have been written to: /home/gabrielj/pmec_hw/uros_espidf_env/build
