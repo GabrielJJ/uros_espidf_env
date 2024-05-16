@@ -1,3 +1,6 @@
-[submodule "micro_ros_espidf_components"]
+[submodule "components/micro_ros_espidf_components"]
     path = components/micro_ros_espidf_components
     url = git@github.com:micro-ROS/micro_ros_espidf_component.git
+[submodule "components/micro_ros_espidf_component"]
+	path = components/micro_ros_espidf_component
+	url = git@github.com:micro-ROS/micro_ros_espidf_component.git
