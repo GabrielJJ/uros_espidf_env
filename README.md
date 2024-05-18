@@ -4,7 +4,7 @@ Repository dedicated to easily test and deploy firmwares that runs in ESP32 with
 
 ## Dependencies
 - Docker 
-- ESP-IDF
+- [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/linux-macos-setup.html)
 
 Make shure you have the esp-idf tool and some basic packages installed: 
 ```bash
